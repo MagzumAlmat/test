@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.app-wrapper{
+  width: auto;
+display:grid;
+grid-template-areas: 
+"h h h"
+"n c c";
+grid-template-rows:80px 1fr;
+grid-template-columns: 3fr,10fr;
+/* grid-gap:1px; */
+}
+
+.nav{
+  grid-area: n;
+  background-color: bisque;
+}
+.header{
+  grid-area:h;
+  background-color: green;
+}
+
+.header img{
+  width:80px;
+}
+.ava img{
+  width:120px;
+}
+.content{
+  margin: 0 auto;
+  grid-area:c;
+  background-color:rgb(55, 110, 173);
+}
